@@ -75,7 +75,10 @@ const loginController = async (req, res) => {
 
 
 const testingback = async (req, res) => {
-    console.log("YES DATA IS COMING BACK");
+    res.status(200).send({
+        success: true,
+        message: 'testing done'
+    })
 }
 
 module.exports = { registerationController, loginController, testingback }
